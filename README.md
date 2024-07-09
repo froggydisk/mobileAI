@@ -5,7 +5,7 @@ This project is based on the [pytorch-ssd](https://github.com/qfgaohao/pytorch-s
 We are applying a dog nose recoginition model to a React Native App by using Object Detection.
 
 <div align="center">
-  <img src="/assets/demo.png" width="50%">
+  <img src="/assets/dog-nose.gif" width="50%">
 </div>
 
 ## Process
