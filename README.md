@@ -2,7 +2,7 @@
 
 This project is based on the [pytorch-ssd](https://github.com/qfgaohao/pytorch-ssd.git). You can find more details on [my blog](https://froggydisk.github.io/ai-on-app/).
 
-We are applying a dog nose recoginition model to a React Native App by using Object Detection.
+**We are applying a dog nose recoginition model to a React Native App by using Object Detection.**
 
 <div align="center">
   <img src="/assets/dog-nose.gif" width="50%">
@@ -163,7 +163,7 @@ python3 export_model.py
 
 ### Model Application
 
-You can check a sample app in the torchApp folder. Just run it.
+You can check a sample React Native app in the torchApp folder. Just run it.
 
 If you want to deploy the model directly to your app, here is what you need:
 
