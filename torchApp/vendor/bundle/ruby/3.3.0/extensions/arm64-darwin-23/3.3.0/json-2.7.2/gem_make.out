@@ -1,0 +1,16 @@
+current directory: /Users/seum/Downloads/torchApp/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/seum/Downloads/torchApp/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240708-58517-h28qki sitelibdir\=./.gem.20240708-58517-h28qki clean
+
+current directory: /Users/seum/Downloads/torchApp/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240708-58517-h28qki sitelibdir\=./.gem.20240708-58517-h28qki
+make: Nothing to be done for `all'.
+
+current directory: /Users/seum/Downloads/torchApp/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240708-58517-h28qki sitelibdir\=./.gem.20240708-58517-h28qki install
+
+current directory: /Users/seum/Downloads/torchApp/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240708-58517-h28qki sitelibdir\=./.gem.20240708-58517-h28qki clean

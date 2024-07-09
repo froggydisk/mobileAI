@@ -1,0 +1,18 @@
+current directory: /Users/seum/Downloads/torchApp/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/seum/Downloads/torchApp/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240708-58517-f7ye1y sitelibdir\=./.gem.20240708-58517-f7ye1y clean
+
+current directory: /Users/seum/Downloads/torchApp/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240708-58517-f7ye1y sitelibdir\=./.gem.20240708-58517-f7ye1y
+compiling nkf.c
+linking shared-object nkf.bundle
+
+current directory: /Users/seum/Downloads/torchApp/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240708-58517-f7ye1y sitelibdir\=./.gem.20240708-58517-f7ye1y install
+/usr/bin/install -c -m 0755 nkf.bundle ./.gem.20240708-58517-f7ye1y
+
+current directory: /Users/seum/Downloads/torchApp/vendor/bundle/ruby/3.3.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20240708-58517-f7ye1y sitelibdir\=./.gem.20240708-58517-f7ye1y clean
