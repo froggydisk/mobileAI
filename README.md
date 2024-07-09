@@ -193,6 +193,6 @@ Everything is set. It seems working well.
   <img src="/assets/perf-test.png" width="50%">
 </div>
 
-There might be performance issues due to the limited hardware capabilities of mobile devices.
+## Discussion
 
-You may also experience thermal issues when you use camera with deep learning models.
+There might be performance issues due to the limited hardware capabilities of mobile devices. You may also experience thermal issues when you use camera with deep learning models.
