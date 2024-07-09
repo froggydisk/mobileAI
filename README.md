@@ -4,11 +4,8 @@ This project is based on the [pytorch-ssd](https://github.com/qfgaohao/pytorch-s
 
 We are applying a dog nose recoginition model to a React Native App by using Object Detection.
 
-<div style="margin: auto; text-align: center;">
-  <video width="50%" autoplay muted loop>
-    <source src="/assets/dog-nose.mp4" type="video/mp4">    
-  </video>
-  <div>dog nose recognition</div>
+<div align="center">
+  <img src="/assets/demo.png" width="50%">
 </div>
 
 ## Process
@@ -16,7 +13,7 @@ We are applying a dog nose recoginition model to a React Native App by using Obj
 1. Data Labeling
 2. Data Preprocessing
 3. Model Training
-4. Model Testing
+4. Model Test
 5. Model Transformation
 6. Model Application
 
@@ -45,7 +42,7 @@ python3 labelImg.py
 
 Don't forget to install `qt@5`. The official page does not mension this package, but it is essential.
 
-You can see how to use it [here](<(https://github.com/HumanSignal/labelImg)>).
+You can see how to use it [here](https://github.com/HumanSignal/labelImg).
 
 ![labelImg](/assets/labelImg.png)
 
@@ -73,8 +70,6 @@ sub-validation-annotations-bbox.csv
 🗂️ validation
 ```
 
-<br/>
-
 ### Model Training
 
 Before training, we need to prepare two things:
@@ -86,8 +81,7 @@ Before training, we need to prepare two things:
 
 Building your own environment for ML/DL is possible but time-consuming. It is better to use a Docker container designed for data science.
 
-If you have a GPU, you can save a lot of time.
-If you don't have a GPU, it will take longer.
+If you have a GPU, you can save a lot of time. Decide whether to use a GPU or CPU first.
 
 - GPU
 
@@ -104,7 +98,7 @@ docker pull ufoym/deepo:cpu # image for CPU
 docker run -it --shm-size 8G -v "$(pwd)":/mount ufoym/deepo:cpu bash
 ```
 
-You need additional packages:
+You need to install additional packages in the container:
 
 ```bash
 pip install opencv-python
@@ -120,7 +114,7 @@ python train_ssd.py --dataset_type open_images --datasets /mount/data/dognose_da
 
 Repeat this process, adjusting hyperparameters to find the best model.
 
-### Model Testing
+### Model Test
 
 Ensure you are in the right development environment.
 
@@ -132,10 +126,9 @@ python3 run_ssd_example.py mb2-ssd-lite models/mb2-ssd-lite-Epoch-99-Loss-2.2699
 
 The result file `open-images-model-labels.txt` will be created. Check if the model recognizes the object well.
 
-<figure style="width: 50%; margin: auto; text-align: center;">
-    <img src="/assets/dog-nose.jpg" alt="dog">
-    <figcaption>Test result (source: unsplash)</figcaption>
-</figure>
+<div align="center">
+  <img src="/assets/dog-nose.jpg" width="50%">
+</div>
 
 - Test on the test dataset:
 
@@ -168,8 +161,6 @@ We need to transform the model from `.pth` to `.ptl` for deploying it to a mobil
 python3 export_model.py
 ```
 
-<br/>
-
 ### Model Application
 
 You can check a sample app in the torchApp folder. Just run it.
@@ -198,10 +189,9 @@ You must add `Privacy - Camera Usage Description` to `info.plist` when testing o
 
 Everything is set. It seems working well.
 
-<figure style="width: 50%; margin: auto; text-align: center;">
-    <img src="/assets/perf-test.png" alt="dog">
-    <figcaption>Test on app</figcaption>
-</figure>
+<div align="center">
+  <img src="/assets/perf-test.png" width="50%">
+</div>
 
 There might be performance issues due to the limited hardware capabilities of mobile devices.
 
